@@ -21,33 +21,32 @@ const options = yargs
     type: "string",
     demandOption: true
   })
-  .option("s", {
-    alias: "search",
-    describe: "search input",
+  .option("j", {
+    alias: "joke",
+    describe: "joke topic",
     type: "string"
   })
   .option("w", {
-    alias: "work",
-    describe: "show work for week__",
+    alias: "week",
+    describe: "show info for week, week1 = w00, week2 = w01, and so on...",
     type: "string"
   }).argv;
 
 //   entering name is required in options
 const greeting = `Hello, ${options.name}`;
-
 console.log(greeting);
 
 // setup an if statement to handle different possibilities
-if (options.search) {
+if (options.joke) {
   displayJoke();
-} else if (options.work) {
-  displayWork();
+} else if (options.week) {
+  displayWeek();
 }
 
 function displayJoke() {
   // search loading
-  if (options.search) {
-    console.log(`lookin' for jokes about ${options.search}...`);
+  if (options.joke) {
+    console.log(`lookin' for jokes about ${options.joke}...`);
   } else {
     console.log("random joke for you:");
   }
@@ -71,13 +70,23 @@ function displayJoke() {
   });
 }
 
-function displayWork() {
+function displayWeek() {
   // show work
-  if (options.work) {
-    console.log(`lookin' for items related to ${options.work}...`);
-    let key = options.work;
+  if (options.week) {
+    console.log(`lookin' for items related to ${options.week}...`);
+    let key = options.week;
     console.log(INFO[key]);
   } else {
     console.log("no work found, check request command");
-  } 
-};
+  }
+}
+
+function displayAdvice() {
+  // throw some advice in there for ali
+  axios.get("https://api.adviceslip.com/advice").then(res => {
+    const advice = res.data.slip.advice;
+    console.log(`Ali, here is some valuable advice for you today: ${advice}`);
+  });
+}
+
+displayAdvice();
