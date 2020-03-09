@@ -1,0 +1,26 @@
+{
+  "name": "cli-phillip-shields",
+  "version": "1.0.0",
+  "description": "cli to view submission and assessment info",
+  "main": "./bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phillip-D-Shields/cli-phillip-shields.git"
+  },
+  "author": "phillip david shields",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phillip-D-Shields/cli-phillip-shields/issues"
+  },
+  "homepage": "https://github.com/Phillip-D-Shields/cli-phillip-shields#readme",
+  "bin": {
+    "hello": "./bin/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "yargs": "^13.2.4"
+  }
+}
