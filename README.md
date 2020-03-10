@@ -31,4 +31,6 @@ so a normal submission query would look like this
 simply put, for now your query will follow this format
 `hello -n <name> -s <class+weekNumber>`  
 
+
+if for some reason you wanted to uninstall my cli app `npm uninstall -g cli-phillip-shields`
 ## i got some ideas for this, so it will get better in time.
