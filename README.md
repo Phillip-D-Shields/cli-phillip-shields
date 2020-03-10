@@ -6,17 +6,18 @@
 2.navigate to the root and run `npm install -g`
 3.enter the following `hello`
 
-`hello` command should prompt the following in your terminal   
-```$ hello
+`hello` command should prompt the following in your terminal
+
+```javascript
+$ hello
 Usage: -n <name>
 Options:
   --help           Show help                       [boolean]
   --version        Show version number             [boolean]
   -n, --name       -n <yourName>         [string] [required]
   -s, --select     -s <class+weekNumber>            [string]
-Missing required argument: n```
-
-
+Missing required argument: n
+```
 the program likes your name, it won't do anything for you unless share your name first thing, enter `hello -n Ali` and it should reply, and maybe even give you some good advice. `hello` begins the app, `-n` calls and assigns `Ali` as the user.
 
 Now you are ready to look up my submission data. It is stored in an object using key value pairs. To select and view data we use the `-s` command followed by the class and week number we want to view.
