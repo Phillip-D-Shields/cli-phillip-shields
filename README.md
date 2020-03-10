@@ -1,5 +1,5 @@
-### Ali 
-# this nifty little cli-tool will be submitted instead of all my class submissions. It's pretty simple, but read the instructions below. Future updates will include data for future submissions. Enjoy
+# Ali 
+## this nifty little cli-tool will be submitted instead of all my class submissions. It's pretty simple, but read the instructions below. Future updates will include data for future submissions. Enjoy
 
 ## To install:
 1.fork or clone this repo, I made you a collaborator 
