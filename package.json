@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Phillip-D-Shields/cli-phillip-shields#readme",
   "bin": {
-    "hello": "./bin/index.js"
+    "hello-phill": "./bin/index.js"
   },
   "dependencies": {
     "axios": "^0.19.2",

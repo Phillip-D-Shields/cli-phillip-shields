@@ -1,38 +1,5 @@
 #!/usr/bin/env node
 
-// Ali, this nifty little cli-tool will be submitted repeatedly in place of a word doc or url to my labs, journals, and any other submitted work. 
-
-// To install:
-// 1.navigate to the root of directory 'cli-phillip-shields'
-// 2.run the following command: npm install
-// 3.enter the following: hello
-
-// hello command should prompt the following in your terminal   
-// $ hello
-// Usage: -n <name>
-// Options:
-//   --help           Show help                       [boolean]
-//   --version        Show version number             [boolean]
-//   -n, --name       -n <yourName>         [string] [required]
-//   -s, --select     -s <class+weekNumber>            [string]
-// Missing required argument: n
-
-// my submission data is stored in an object using key value pairs
-// to access week 1 work in DES501 you would enter: -s des00
-// to access week 3 work in SVD503 you would enter: -s svd02
-
-// the program likes your name, as well, so enter your name after saying hello
-// enter the following: hello -n Ali
-
-// Now you are ready to look up submission data, lets start with SVD503 work
-// from week 2
-// enter the following: hello -n Ali -s svd01
-
-// i think from here, you should be able to use my cli app with ease
-// i will add features in the future, so stay tuned
-
-
-
 const yargs = require("yargs");
 const axios = require("axios");
 
@@ -98,7 +65,7 @@ function displayAdvice() {
     const advice = res.data.slip.advice;
     console.log(`
     
-Ali, here is some valuable advice for you today: ${advice}`);
+${options.name}, here is some valuable advice for you today: ${advice}`);
   });
 }
 
