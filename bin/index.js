@@ -6,12 +6,8 @@ const axios = require("axios");
 let className;
 
 const INFO = {
-  des00:
-    "Gitbook activities can be found here: https://phillip-shields.gitbook.io/des501/topic-1/activity-1.1",
   des01:
-    "Gitbook activities can be found here: https://phillip-shields.gitbook.io/des501/topic-2/activity-2.1",
-  des02:
-    "Gitbook activities can be found here: https://phillip-shields.gitbook.io/des501/topic-3/activity-3.1",
+    "Gitbook activities can be found here: https://phillip-shields.gitbook.io/des501/topic-1/activity-1.1",
   sdv00:
     "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README0.md",
   sdv01:
