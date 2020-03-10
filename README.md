@@ -8,7 +8,7 @@
 
 `hello` command should prompt the following in your terminal
 
-```javascript
+```
 $ hello
 Usage: -n <name>
 Options:
