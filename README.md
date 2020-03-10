@@ -2,9 +2,9 @@
 ## this nifty little cli-tool will be submitted instead of all my class submissions. It's pretty simple, but read the instructions below. Future updates will include data for future submissions. Enjoy
 
 ## To install:
-1.fork or clone this repo, I made you a collaborator 
-2.navigate to the root and run `npm install -g`
-3.enter the following `hello`
+1. fork or clone this repo, I made you a collaborator 
+2. navigate to the root and run `npm install -g`
+3. enter the following `hello`
 
 `hello` command should prompt the following in your terminal
 
