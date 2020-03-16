@@ -10,7 +10,7 @@ let INFO = {
   des01:
     "Gitbook activities submitted during week01 can be found here: https://phillip-shields.gitbook.io/des501/topic-1/activity-1.1",
   des02:
-    "Gitbook activities submitted during week01 can be found here: https://phillip-shields.gitbook.io/des501/topic-2/activity-2.1",
+    "Gitbook activities submitted during week02 can be found here: https://phillip-shields.gitbook.io/des501/topic-2/activity-2.1",
   sdv00:
     "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README0.md",
   sdv01:
