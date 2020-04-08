@@ -3,8 +3,6 @@
 const yargs = require("yargs");
 const axios = require("axios");
 
-let className;
-
 // setup option to add entries
 let INFO = {
   des01:
@@ -18,7 +16,9 @@ let INFO = {
   sdv02:
     "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README2.md",
   sdv03:
-    "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README3.md"
+    "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README3.md",
+  sdv04:
+    "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README4.md"
 };
 
 // configure cli options here
@@ -28,16 +28,20 @@ const options = yargs
     alias: "name",
     describe: "-n <yourName>",
     type: "string",
-    demandOption: true
+    demandOption: true,
   })
   .option("s", {
     alias: "select",
     describe: "-s <class+weekNumber>",
-    type: "string"
+    type: "string",
   })
   .option("l", {
     alias: "list",
-    describe: "-l list all current submissions in database"
+    describe: "-l list all current submissions in database",
+  })
+  .option("a", {
+    alias: "add",
+    describe: "-a add the following submission to the object data",
   }).argv;
 
 //   entering name is required in options
@@ -68,7 +72,7 @@ function displayAll() {
 // random unwanted advice given at the end
 function displayAdvice() {
   // throw some advice in there for ali
-  axios.get("https://api.adviceslip.com/advice").then(res => {
+  axios.get("https://api.adviceslip.com/advice").then((res) => {
     const advice = res.data.slip.advice;
     console.log(`
     
