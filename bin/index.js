@@ -9,6 +9,8 @@ let INFO = {
     "Gitbook activities submitted during week01 can be found here: https://phillip-shields.gitbook.io/des501/topic-1/activity-1.1",
   des02:
     "Gitbook activities submitted during week02 can be found here: https://phillip-shields.gitbook.io/des501/topic-2/activity-2.1",
+  des03:
+    "Gitbook activities submitted for Topic03 can be found here: https://phillip-shields.gitbook.io/des501/topic-3/activity-3.1",
   sdv00:
     "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README0.md",
   sdv01:
@@ -18,7 +20,7 @@ let INFO = {
   sdv03:
     "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README3.md",
   sdv04:
-    "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README4.md"
+    "the readme.md for this lab can be found here: https://github.com/Phillip-D-Shields/sdv-labs/blob/master/README4.md",
 };
 
 // configure cli options here
